@@ -1,0 +1,82 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>Reservation</title>
+<style type="text/css">
+label
+{
+color:blue;
+font-size:15pt;
+font-family:serif;
+}
+input[type=submit]
+{
+padding:3px;
+border:4px solid blue;
+width:15%;
+margin:auto;
+}
+input[type=reset]
+{
+padding:3px;
+border:4px solid yellow;
+width:15%;
+margin:auto;
+}
+
+
+</style>
+</head>
+<body bgcolor="aqua" opacity=0.5>
+<u><h1 style="color:black;">Booking</h1></u>
+<form multipart/formdata action="url" method="put">
+<pre>
+<b>
+<label>FullName</label>
+<input type="text" name="Fullname" value="name">
+
+<label>Mobile no:*</label>
+<input type="number" name="Mobile no" value="" required>
+
+<label>E-mail:</label>
+<input type="email" name="E-mail" value="email" checked>
+
+<label>Check-in date:</label>
+<input type="date" name="Check-in date" value="date">
+
+<label>Check-out date:</label>
+<input type="date" name="Check-out" value="date">
+
+<label>Members:</label>
+<input type="checkbox" style="width:30px;" name="Members:" value="">Adults
+<input type="checkbox" style="width:30px;" name="Members:" value="">Children
+
+<label>Types of rooms:</label>
+<input type="checkbox" style="width:30px;" name="Types of rooms" value="">Single rooms
+<input type="checkbox" style="width:30px;" name="Types of rooms" value="">Double rooms
+<input type="checkbox" style="width:30px;" name="Types of rooms" value="">Triple rooms
+
+<label>Number of Rooms;</label>
+<input type="number" name="Number of rooms" value="">
+
+<label>Country:</label>
+<input type="text" name="Country" value="India" readonly>
+
+<label>State:</label>
+<input type="text" name="state" value="Karnataka" disabled>
+
+<label>Address:</label>
+<input type="text" name="address" value="" required>
+
+<center>
+<input type="submit" name="submit" value="Confirm">
+<input type="reset" name="reset" value="Change">
+</center>
+</b>
+</pre>
+</form>
+</body>
+</html>
+
+
+
