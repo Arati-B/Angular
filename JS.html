@@ -1,0 +1,87 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>Javascript</title>
+<style type="text/css">
+li{
+font-size:15pt;
+color:aqua;
+font-family:aerial;
+}
+p{
+font-size:15pt;
+color:white;
+font-family:cursive;
+}
+</style>
+</head>
+<body bgcolor="black">
+<center>
+<h1 style="font-family:serif;color:violet;font-size:30pt;"><u>Javascript</u></h1>
+</center>
+<u><h2 style="font-family:serif;color:aqua;">Introduction to Javascript</h2></u>
+<p>Javascript is also a client side scripting language and is <u>resposible for the behaviour of the web page</u> </br> Javascript is written withing <u>script</u> tag </br> <u>console.log</u> is used for printing output statement</p>
+<h2 style="font-family:serif;color:yellow;">Declaration of Variables:</h2>
+<ol type="1">
+<li><u>var</u></li>
+<p>Using var we can access the Global and Local Variables inside and outside of the block.</p>
+<li><u>let</u></li>
+<p>Using let we can access local variables inside the block and only global variables outside the block.</p>
+<li><u>const</u></li>
+<p>const is similar to let but we cannot reassign the values of variables.</p>
+</ol>
+<script>
+console.log("Hello Javascript");
+console.log("Declaration and Initialization of Variables:");
+console.log("Var type");
+var a=10,b=5,c=4;
+var x="Javascript";
+var y=false;
+console.log("The type of a and b is:",typeof(a&b)+" and the values of a and b is",a +" and",b);
+console.log("The type of x is:",typeof(x)+" and value is",x);
+console.log("The type of y is:",typeof(y)+" and value is",y);
+{
+c=6;
+console.log("Arithmetic operations;")
+console.log("Addition is:",a+b);
+console.log("Subtraction is:",b-a);
+console.log("Multiplication is:",a*b);
+console.log("Division is:",b/a);
+console.log("Modulus is:",a%b);
+console.log("Logical operators");
+console.log("a&b is:",a&b);
+console.log("a==b is:",a==b);
+console.log("a===b is:",a===b);
+console.log("a not b is:",a!=b);
+console.log("Let type:");
+console.log("C is:",c);
+}
+console.log("C is:",c);
+console.log("Let type:");
+let p=5,q=3;
+p=4;
+console.log("The values of p and q is:",p,"and",q);
+{
+p=7;
+q=1;
+console.log("The values of p and q is:",p,"and",q);
+console.log("addition is:",p+q);
+}
+q=3;
+console.log("The values of p and q is:",p,"and",q);
+console.log("Const type:")
+const g=9.8;
+{
+console.log("The type of g is:",typeof(g),"and it's value is:",g);
+}
+</script>
+<h2 style="font-family:serif;color:crimson;"><u>Types of Operators</u></h2>
+<ol type="a">
+<li>Arithmetic Operators</li>
+<li>Logical Operators</li>
+<li>Boolean Operators</li>
+<li>Increment Operators</li>
+<li>Decrement Operators</li>
+</ol>
+</body>
+</html>
