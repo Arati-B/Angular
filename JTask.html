@@ -1,0 +1,168 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>Amazon</title>
+<style type="text/css">
+p
+{
+font-family:aerial;
+font-size:16pt;
+color:blue;
+}
+
+</style>
+</head>
+<body>
+<img src="https://th.bing.com/th/id/OIP.3ZJg2P-fzfHw3pjJyUJMuQHaE8?pid=ImgDet&rs=1" height=80% width=80%>
+<a href=" "> </a>
+<p>Online Shopping India-Buy Books,Mobile Phones,Laptops,Tablets,Cameras,Toys and Games,Baby Products,Sarees,Salwar suits,Kurtas,etc..<br/>Cash on Delivery Available.Vast Selection.Best Prices.Free Shipping*</p>
+
+
+<script type="text/javascript">
+
+document.write("1. for Mobile Phones","<br>");
+
+document.write("2. for Household Products","<br>");
+
+document.write("3. for Electronics","<br>");
+
+document.write("4. for Appliances","<br>");
+
+document.write("5. for Amazon Fashion","<br>");
+
+document.write("6. for Kitchen Products","<br>");
+
+var num=prompt("Enter a number from 1 to 6");
+console.log(num);
+switch(num){
+case '1':alert("Mobile Phones","<br>");
+break;
+case '2':alert("Household Products","<br>");
+break;
+case '3':alert("Electronics","<br>");
+break;
+case '4':alert("Appliances","<br>");
+break;
+case '5':alert("Amazon Fashion","<br>");
+break;
+case '6':alert("Kitchen Products","<br>");
+break;
+default:alert("Entered number is Invalid");
+}
+
+if(num=='1')
+{
+document.write("Mobile Phones:","<br>");
+var mb={
+		F:"Name:Redmi 9",
+		C:"Color:Sky blue",
+		R:"Ram:4GB",
+		S:"Storage:64GB",
+		s:"Name:OnePlus Nord 5G",
+		c:"Color:Blue Marble",
+		r:"Ram:12GB",
+		st:"Storage:25GB",
+		
+		battery:function(b){
+		document.write("Battery is about",b);
+		}
+		}
+		document.write(mb.F,"<br>",mb.C,"<br>",mb.R,"<br>",mb.S,"<br>",mb.s,"<br>",mb.c,"<br>",mb.r,"<br>",mb.st,"<br>");
+		mb.battery('100%');
+}
+else if(num==2)
+{
+document.write("Household Products are:","<br>");
+
+var hp={
+		c:"1. Air Conditioners",
+		b:"2. Baking dishes",
+		B:"3. Blankets",
+		m:"4. Mixers",
+		bo:"5. Bookcases",
+		d:"6. dressers etc,.",
+		}	
+
+		document.write(hp.c,"<br>",hp.b,"<br>",hp.B,"<br>",hp.m,"<br>",hp.bo,"<br>",hp.d,"<br>");
+}
+else if(num==3)
+{
+document.write("Electronics are:","<br>");
+
+var  E={
+		r:"1. Radios",
+		c:"2. Computers",
+		t:"3. Televisions",
+		
+		radio:function(ra){
+		document.write("Radio is used for ",ra,"<br>");},
+		computer:function(co){
+		document.write("Computers is ",co,"<br>");},
+		television:function(te){
+		document.write("Televisions are",te,"<br>");}
+		}
+		
+		document.write(E.r,"<br>",E.c,"<br>",E.t,"<br>");
+		E.radio('receiving Radio Programmes');
+		E.computer('an electronic device for storing and processing data');
+		E.television('systems for converting visual images(with sound) into electrical signals');
+}
+else if(num==4)
+{
+document.write("Some of the Appliances includes:","<br>");
+
+var A={
+		d:"1. Dishwasher",
+		w:"2. Washing Machine",
+		dr:"3. Dryer",
+		m:"4. Microwave",
+		o:"5. Oven",
+		Dishwasher:function(a){
+		document.write("A Dishwasher is used for ",a,"<br>");},
+		washing:function(b){
+		document.write("Washing machine is used for ",b,"<br>");}
+		}
+		document.write(A.d,"<br>",A.w,"<br>",A.dr,"<br>",A.m,"<br>",A.o,"<br>");
+		A.Dishwasher('cleaning utensils');
+		A.washing('washing clothes');
+}
+else if(num==5)
+{
+document.write("Fashion:","<br>");
+
+var F={
+		m:"1. Men",
+		w:"2. Women",
+		k:"3. Kids",
+		f:"4. Footwear",
+		j:"5. Jwellary",
+		}
+		document.write(F.m,"<br>",F.w,"<br>",F.k,"<br>",F.f,"<br>",F.j,"<br>");
+}
+else if(num==6)
+{
+document.write("Kitchen Products include:","<br>");
+
+var K={
+		k:"1. Chef's Knife",
+		c:"2. Cutting Board",
+		m:"3. Measuring Spoons",
+		M:"4. Mixing Bowls",
+		v:"5. Vegetable Peeler",
+		p:"6. Potato Chip Slicer",
+		s:"7. Stainless Steel Colander",
+		P:"8. Potato Masher"
+		}
+		document.write(K.k,"<br>",K.c,"<br>",K.m,"<br>",K.M,"<br>",K.v,"<br>",K.p,"<br>",K.s,"<br>",K.P,"<br>");
+}
+else
+{
+document.write("-----------------------------------------Invalid Number","<br>");
+}
+
+		
+</script>
+</body>
+</html>
+
+
