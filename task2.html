@@ -1,0 +1,174 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>Online Shopping</title>
+<style type="text/css">
+p
+{
+font-family:aerial;
+font-size:16pt;
+color:blue;
+}
+</style>
+</head>
+<body>
+<img src="https://image.slidesharecdn.com/monapresentationv2-131208222017-phpapp01/95/online-shopping-market-in-india-1-638.jpg?cb=1388027517" height=80% width=80%>
+<p>Online Shopping India-Buy Books,Mobile Phones,Laptops,Tablets,Cameras,Toys and Games,Baby Products,Sarees,Salwar suits,Kurtas,etc..<br/>Cash on Delivery Available.Vast Selection.Best Prices.Free Shipping*</p>
+<script type="text/javascript">
+var items=new Array("Mobile Phones","Household Products","Electronics",						"Appliances","Fashion","Kitchen Products");
+
+var res=items.toString();
+alert(res);
+var num=prompt("Enter a number from 1 to 6");
+console.log(num);
+switch(num){
+case '1':alert("Mobile Phones","<br>");
+break;
+case '2':alert("Household Products","<br>");
+break;
+case '3':alert("Electronics","<br>");
+break;
+case '4':alert("Appliances","<br>");
+break;
+case '5':alert("Amazon Fashion","<br>");
+break;
+case '6':alert("Kitchen Products","<br>");
+break;
+default:alert("Entered number is Invalid");
+}
+if(num=='1')
+{
+document.write("Mobile Phones:","<br>");
+var mb=new Array("Redmi 9","OnePlus Nord 5G");
+alert(mb.toString());
+document.write(mb.toString(),'<br>');
+var index=prompt("Enter youe choice");
+console.log("Index is:",index);
+if(index==0){
+var redmi={
+		F:"Name:Redmi 9",
+		C:"Color:Sky blue",
+		R:"Ram:4GB",
+		S:"Storage:64GB",
+		battery:function(b){
+		document.write("Battery is about",b);
+		}
+		}
+		document.write(redmi.F,"<br>",redmi.C,"<br>",redmi.R,"<br>",redmi.S,"<br>");
+		redmi.battery('100%');
+}
+else if(index==1){
+var oneplus={
+		F:"Name:OnePlus Nord 5G",
+		C:"Color:Blue Marble",
+		R:"Ram:12GB",
+		S:"Storage:25GB",
+		battery:function(b){
+		document.write("Battery is about ",b);
+		}
+		}
+		document.write(oneplus.F,'<br>',oneplus.C,'<br>',oneplus.R,'<br>',oneplus.S,'<br>');
+		oneplus.battery('100%');
+	}
+else{
+alert('Invalid Index');
+}
+}
+else if(num==2)
+{
+document.write("Household Products:",'<br>');
+var hp=new Array("Air Conditioners","Baking dishes","Blankets","Mixers",  			"Bookcases","Dressers");
+alert(hp.toString());
+document.write(hp.toString(),'<br>');
+var index=prompt("Enter your choice");
+if(index==0){
+document.write("Air Conditioners:-",'<br>');
+var ac={
+		B:"Name:LG",
+		P:"Price:15000",
+		b:"Name:WhirlPool",
+		p:"Price:17000",
+		cooling:function(c){
+		document.write("AC is used for ",c);
+		}
+		}
+		document.write('<br>',ac.B,'<br>',ac.P,'<br>',ac.b,'<br>',ac.p,'<br>');
+		ac.cooling('Reducing Temperature');
+		}
+else if(index==1){
+document.write("Mixers:-","<br>");
+var mx={
+		n:"Brand:Bajaj",
+		s:"Speed:500 Watt",
+		j:"Jars:5",
+		N:"Brand:Philips",
+		S:"Speed:1000 Watt",
+		J:"Jars:4",
+		warranty:function(m){
+		document.write("Warranty is ",m);
+		}
+		}
+		document.write(mx.n,'<br>',mx.s,'<br>',mx.j,'<br>',mx.N,'<br>',mx.S,'<br>',mx.J);
+		mx.warranty('2 Years');
+		}
+else{
+alert("Invalid");
+}
+}
+else if(num==3)
+{
+document.write("Electronics are:",'<br>');
+ var e=new Array("Laptops","Televisions");
+ alert(e.toString());
+ document.write(e.sort(),'<br>');
+  var index=prompt("Enter your choice");
+  if(index==0){
+  document.write("Laptops:",'<br>');
+  var ele={
+			n:'Name:Lenovo',
+			p:'Processor:I6',
+			co:'Cost:50000',
+			N:'Name:Hp',
+			P:'Processor:I7',
+			C:'Cost:70000',
+			battery:function(a){
+			document.write("Battery is ",a);
+			}
+			}
+			document.write(ele.n,'<br>',ele.p,'<br>',ele.co,'<br>',ele.N,'<br>',ele.P,'<br>',ele.C,'<br>');
+			ele.battery('100%');
+		}
+	else if(index==1){
+	var Tel={
+				n:'Name:LG',
+				c:'Color:Black',
+				p:'Cost:200000',
+				N:'Name:Videocon',
+				C:'Color:Gray',
+				P:'Cost:70000',
+				display:function(d){
+				document.write("Display is ",d,'<br>');
+				},
+				displayy:function(dd){
+				document.write("Display is ",dd,'<br>');
+				}
+				}
+				document.write(Tel.n,'<br>',Tel.c,'<br>',Tel.p,'<br>');
+				Tel.display('3D');
+				Tel.displayy('2D');
+			}
+	else{
+		document.write("Invalid");
+	}
+	}
+	else{
+	document.write("-------Invalid Entry-------");
+	}
+	
+	
+		
+</script>
+</body>
+</html>
+
+
