@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Javascript</title>
+</head>
+<body>
+<script type="text/javascript">
+function movies(language,name,rating){
+		this.language=language;
+		this.name=name;
+		this.rating=rating;
+		}
+		var movie=new movies('Kannada','KGF',4.8);
+		document.write("Movie Details:",'<br>',"Language :",movie.language,'<br>',"Name of the Movie :",movie.name,'<br>',"Rating :",movie.rating);
+		
+		movies.prototype.review='Superb';
+		
+		movies.prototype.theme=function(t){
+		document.write('<br> The Movie is full of ',t,'<br>');
+		}
+		document.write('<br> Review :',movie.review);
+		movie.theme('Action');
+		
+		document.write("-----String Methods:----",'<br>');
+		
+		var n1="JS is a Client Side Scripting Language";
+		document.write(n1,'<br>');
+		
+		document.write('Index of C is :',n1.indexOf('Side'),'<br>');
+		document.write('Last index of i is :',n1.lastIndexOf('i'),'<br>');
+		document.write('The Length of the String is :',n1.length,'<br>');
+		document.write('r is at position :',n1.search('r'),'<br>');
+		document.write('The Slice result is   :',n1.slice(30,38),'<br>');
+		document.write('The Substring is   :',n1.substr(8,6),'<br>');
+		document.write('The Original String is : ','<br>',n1,'<br>');
+		
+		var n2="JS fullform is Javascript";
+		document.write('The String is:',n2,'<br>');
+		document.write('The replaced string is :',n2.replace('Javascript','Scripting'),'<br>');
+		document.write(n2.toUpperCase(),'<br>');
+		document.write(n2.toLowerCase(),'<br>');
+		document.write('Theconcatination of string is :','<br>',n1.concat(' and is responsible for the behaviour of the web page.'),'<br>');
+		document.write(n1,'<br>');
+		var n3=' JS     OOPL     .';
+		document.write('After triming :',n3.trim(),'<br>');
+		document.write(n3.length,'<br>');
+		document.write(n3.padStart(22,'//'),'<br>');
+		document.write(n3.padEnd(20,'//'),'<br>');
+		document.write('Character at 5th position in a String is :',n2.charAt(5),'<br>');
+		var n4="Arati";
+		document.write('The Asci value of \'r\' in the above string is :',n4.charCodeAt(1),'<br>');
+		document.write('_____NaN____','<br>');
+		var p=10;
+		var q='String';
+		var r=p/q;
+		
+		document.write('The value of r is:',r,'<br>','The type of p is:',typeof p,'<br>');
+		document.write('The type of q is:',typeof q,'<br>');
+		document.write('The type of r is:',typeof r,'<br>');
+		document.write(isNaN(r),'<br>');
+		
+		document.write('---------MATH----------','<br>');
+		
+		var a=prompt("Enter a number you want to find square root of");
+		var b=Math.sqrt(a);
+		
+		document.write("The Square root of ",a," is: ",b,'<br>');
+		var x=prompt('Enter a number you want to find 3rd power of');
+		var y=Math.pow(x,3);
+		document.write('The 3\'rd\' power of ',x,' is: ',y,'<br>');
+		
+		alert("Enter 4 numbers");
+		var a1=prompt("Enter 1st number");
+		var a2=prompt("Enter 2nd number");
+		var a3=prompt("Enter 3rd number");
+		var a4=prompt("Enter 4th number");
+		document.write("Largest among entered numbers is:",Math.max(a1,a2,a3,a4),'<br>');
+		document.write("Smallest among entered numbers is:",Math.min(a1,a2,a3,a4),'<br>');
+		document.write("Random numbers are:",Math.random(),'<br>');
+		document.write("The value of pi is :",Math.PI,'<br>');
+		document.write('-----Number Methods---','<br>');
+		var z=parseInt(prompt("enter a number to which you want to find its exponential value"));
+		document.write('The exponential value of ',z, ' is :',z.toExponential(),'<br>');
+		var num=parseFloat(prompt('Enter a number in decimal values'));
+		document.write('After fixing:',num.toFixed(),'<br>');
+		document.write('Current string value version of ',num,' is ',num.toLocaleString(),'<br>');
+		document.write('The precision value is :',num.toPrecision(),'<br>');
+		document.write('The string representation of ',num,' is ',num.toString(),'<br>');
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</script>
+</body>
+</html>		
+		
