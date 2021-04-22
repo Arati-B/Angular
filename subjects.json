@@ -1,0 +1,29 @@
+{
+"subjects" :[
+			  {
+			    "technology" : "HTML",
+				"fullform" : "Hyper Text Markup Language",
+				"image" : "https://www.sickchirpse.com/wp-content/uploads/2016/09/HTML.jpg" ,
+				"link" : "https://www.w3schools.com/html/"
+			  },
+			  {
+				"technology" : "CSS",
+				"fullform" : "Cascading Style Sheets",
+				"image" : "http://bedford-computing.co.uk/learning/wp-content/uploads/2015/09/css-logo.jpg",
+				"link" : "https://www.w3schools.com/Css/"
+			  },
+			 {
+				"technology" : "JS",
+				"fullform" : "JavaSCript",
+				"image" : "https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2017/10/What-Is-JavaScript-Featured.jpg",
+				"link" : "https://www.w3schools.com/js/DEFAULT.asp"
+			  },
+			 {
+				"technology" : "Bootstrap",
+				"image" : "https://i1.wp.com/jfdi.info/wp-content/uploads/bootstrap.png?ssl=1",
+				"link" : "https://www.w3schools.com/bootstrap4/default.asp"
+			 }
+			 ]
+	}
+			  
+			  
