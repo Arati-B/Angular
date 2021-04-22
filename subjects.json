@@ -17,13 +17,8 @@
 				"fullform" : "JavaSCript",
 				"image" : "https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2017/10/What-Is-JavaScript-Featured.jpg",
 				"link" : "https://www.w3schools.com/js/DEFAULT.asp"
-			  },
-			 {
-				"technology" : "Bootstrap",
-				"image" : "https://clipground.com/images/bootstrap-icon-png-8.png",
-				"link" : "https://www.w3schools.com/bootstrap4/default.asp"
-			 }
-			 ]
+			  }
+			 		 ]
 	}
 			  
 			  
