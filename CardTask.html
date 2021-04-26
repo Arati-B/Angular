@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>All Seasons</title>
+<link rel="stylesheet" type="text/css" href="C:\Users\Windows\Desktop\card.css">
+<style type="text/css">
+.card
+{
+background-image:url("https://wallpapercave.com/wp/wp2704824.jpg");
+width:50%;
+height:50%;
+align:center;
+}
+.card-title
+{
+font-size:33pt;
+color:crimson;
+background-color:white;
+}
+.card-text
+{
+font-size:30pt;
+color:blue;
+}
+a
+{
+color:red;
+font-size:20pt;
+}
+button
+{
+padding : 4px;
+border : 2px solid yellow;
+margin : auto;
+background-color : yellow;
+color : black;
+font-size : 25pt;
+font-family : serif;
+}
+</style>
+</head>
+<body bgcolor="black">
+<center><h1 style="font-size:30pt;color:blue;"> Stay Fit And Healthy In All Seasons..!!</h1</center>
+<div class="card">
+	<center><h5 class="card-title">-:All Seasons:-</h5></center>
+	
+<div class="card-body">
+	
+		<button onclick="ajaxCall()">Seasons</button>
+		<div id="season"></div>
+</div>
+</div>
+<script type="text/javascript">
+
+function ajaxCall(){
+
+var http = new XMLHttpRequest();
+http.onreadystatechange = function(){
+	if(this.readyState == 4 && this.status == 200)
+	{
+		var data = this.responseText;
+		var obj = JSON.parse(data);
+		
+		for(x=0 ; x < obj.seasons.length ; x++)
+		{
+		 var element = document.getElementById("season");
+		 
+		 var season = document.createElement("h2");
+		 season.innerHTML += obj.seasons[x].season;
+		 season.style.color = 'cyan';
+		 season.style.fontSize = '28pt';
+		 element.appendChild(season);
+		 
+		 var image = document.createElement("Image");
+		 var i = obj.seasons[x].image;
+		 image.setAttribute("src",i);
+		 image.style.width = '40%';
+		 image.style.height = '40%';
+		 element.appendChild(image);
+		 element.innerHTML += "<br>";
+		 
+		 var fruits = document.createElement("Image");
+		 var f = obj.seasons[x].fruits;
+		 fruits.setAttribute("src",f);
+		 fruits.style.width = '40%';
+		 fruits.style.height = '40%';
+		 element.appendChild(fruits);
+		 element.innerHTML += "<br>";
+		 
+		 var diet = document.createElement("A");
+		 var l = document.createTextNode("click here for diet chart")
+		 var link = obj.seasons[x].diet;
+		 diet.setAttribute("href",link);
+		 diet.style.color = "blue";
+		 diet.style.fontSize = '18pt';
+		 diet.appendChild(l);
+		 element.appendChild(diet);
+		 
+		} 
+		console.log("HTTP status:" +this.status);
+		
+	}
+	else{
+	console.log("Request is not successful "+this.status);
+	}
+	};
+http.open("GET","https://raw.githubusercontent.com/Arati-B/Angular/master/seasons.json",true);
+http.send();
+}
+
+
+</script>
+</body>
+</html>
+
