@@ -1,0 +1,28 @@
+{
+
+"seasons": [
+
+			{
+			 
+			 "season":"winter",
+			 "image":"https://th.bing.com/th/id/Red04ba17125c4836d0e70e1f08aa185f?rik=fi81EuYGSOnoIA&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fcrCHJzL.jpg&ehk=1xngiqGRzpj58M51sDgwS6xyCBOnIP3CtHs7TFZ7MbM%3d&risl=&pid=ImgRaw",
+			 "fruits":"https://i.pinimg.com/originals/0d/db/d1/0ddbd1493d52fdec89cc3fc1d7c5ccba.jpg",
+			 "diet":"https://www.tectusblog.com/blog/winter-season-best-7-exercise-diet-plan-tips"
+			 },
+			 
+			{
+			 
+			 "season":"spring",
+			 "image":"https://th.bing.com/th/id/Rdd47718e379649d8529f019a1ab6085b?rik=PHtwwLjSAxbM7Q&riu=http%3a%2f%2fhdlatestwallpaper.com%2fwp-content%2fthemes%2fsahifa%2fdownload.php%3ffname%3dSpring-Season-HD-Wallpaper-640x1136.jpg%26act%3ddownload%26edmc%3d15260%26path%3dhttp%3a%2f%2fhdlatestwallpaper.com%2fwp-content%2fuploads%2f2017%2f10%2fSpring-Season-HD-Wallpaper-640x1136.jpg&ehk=gbgeLGcKQ%2fdGddgzkqMyjl%2fWzWQcOlaZ5%2fOq%2fuAw%2bKo%3d&risl=&pid=ImgRaw",
+			 "fruits":"http://australianflavours.com.au/wp-content/uploads/2014/10/fresh-fruit-seasonal-e1412410790734.jpg",
+			 "diet":"https://www.muscleandfitness.com/nutrition/gain-mass/spring-clean-diet/"
+			 },
+			{
+			 
+			 "season":"rainy",
+			 "image":"https://th.bing.com/th/id/Rde2a9cc5763f6c05d1f62f33c0862617?rik=G%2ffLutaGeDlIdA&riu=http%3a%2f%2fwww.ugaoo.com%2fknowledge-center%2fwp-content%2fuploads%2f2017%2f07%2fshutterstock_277573898.jpg&ehk=2DleMxLrkVVF7cq1I14JLz%2ff3BKQ78aTF8nrwmUJ2D8%3d&risl=&pid=ImgRaw",
+			 "fruits":"https://img.khoobsurati.com/wp-content/uploads/2018/07/img-yummy-and-delicious-food-to-eat-in-this-rainy-season-2018-07.jpg",
+			 "diet":"https://www.stylecraze.com/articles/rainy-season-foods-you-can-include-in-your-diet/"
+			 }
+			 ]
+			 }
